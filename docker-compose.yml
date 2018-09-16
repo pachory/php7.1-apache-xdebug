@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  web:
+    container_name: php7.1
+    build: .
+    volumes:
+      - $PWD/src/:/var/www/html
+    ports:
+      - 8800:80
